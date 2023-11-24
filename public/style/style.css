@@ -274,12 +274,72 @@ footer {
 /* RESPONSIVE */
 /* SMARTPHONE */
 @media (max-width: 576px) {
+    /* HEADER */
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 45%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #0A1650;
+        transition: all 0.2s ease-in-out;
+    }
 
+    .menu li {
+        margin-top: 40px;
+        padding: 0;
+    }
+
+    .menu li a {
+        padding: 10px;
+    }
+
+    .open-menu , .close-menu {
+        display: block;
+    }
+
+    #check:checked ~ .menu {
+        right: 0;
+    }
 }
 
 /* TABLET */
 @media (min-width: 577px) and (max-width: 768px) {
+        /* HEADER */
+        .menu {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 45%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            right: -100%;
+            z-index: 100;
+            background-color: #0A1650;
+            transition: all 0.2s ease-in-out;
+        }
     
+        .menu li {
+            margin-top: 40px;
+            padding: 0;
+        }
+    
+        .menu li a {
+            padding: 10px;
+        }
+    
+        .open-menu , .close-menu {
+            display: block;
+        }
+    
+        #check:checked ~ .menu {
+            right: 0;
+        }
 }
 
 /* DESKTOP */
