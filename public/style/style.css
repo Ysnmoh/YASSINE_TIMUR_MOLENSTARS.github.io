@@ -94,6 +94,7 @@ h1 {
 h2 {
     color: #FFFFFF;
     font-size: 38px;
+    text-align: center;
 }
 
 h3 {
@@ -101,6 +102,13 @@ h3 {
     font-family: "RobotoRegular";
     font-size: 15px;
     font-weight: 100;
+    text-align: center;
+}
+
+h4 {
+    color: #FFFFFF;
+    font-size: 15px;
+    line-height: 20px;
 }
 
 p {
@@ -241,7 +249,98 @@ p {
 
 /* WHAT WE DO */
 .whatwedo {
+    background-image: url("../src/image/overly-img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    background-color: #122061;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
 
+
+.whatwedo p {
+    line-height: 20px;
+}
+
+.whatwedoH2 {
+    padding: 0 27%;
+}
+
+.whatwedoCol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.whatwedoRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.whatwedoBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: flex-start;
+    height: 265px;
+    width: 200px;
+    background-color: #17256E;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 30px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.whatwedoBox img {
+    height: 40px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.whatwedoBox:hover {
+    border: 2px solid #0AD3EF;
+}
+
+.whatwedoBox:hover img {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.whatwedoBox h4 {
+    padding-right: 70px;
+}
+
+.whatwedoBtn {
+    padding-top: 20px;
+}
+
+.whatwedoBtn button {
+    background-color: #0AD3EF;
+    border: none;
+    border-radius: 50px;
+    height: 43px;
+    width: 140px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: "RobotoBold";
+    transition: all 0.3s ease;
+    border: 2px solid #0AD3EF;
+}
+
+.whatwedoBtn button:hover {
+    background-color: transparent;
 }
 
 /* RELIABLE IT */
