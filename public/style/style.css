@@ -86,11 +86,12 @@ body {
     cursor: pointer;
     color: #FFFFFF;
     font-family: "RobotoRegular";
+    border: 2px solid #0AD3EF;
     transition: all 0.3s ease;
 }
 
 .menu button:hover {
-    background-color: #3A7CEB;
+    background-color: transparent;
 }
 
 .open-menu , .close-menu {
@@ -174,18 +175,20 @@ p {
     color: #FFFFFF;
     font-family: "RobotoBold";
     transition: all 0.3s ease;
+    border: 2px solid #0AD3EF;
 }
 
 .bannerBtn button:hover {
-    background-color: #3A7CEB;
+    background-color: transparent;
 }
 
 #darkbtn {
     background-color: #2152A1;
+    border: 2px solid #2152A1;
 }
 
 #darkbtn:hover {
-    background-color: #3A7CEB;
+    background-color: transparent;
 }
 
 /* PARTNERS */
@@ -221,11 +224,16 @@ p {
     width: 130px;
     background-color: #17256E;
     border-radius: 10%;
+    transition: all 0.3s ease;
+}
+
+.partnersImgBox:hover {
+    background-color: #0AD3EF;
+    padding-bottom: 10px;
 }
 
 .partnersImgBoxImg {
     height: 75px;
-    
 }
 
 /* WHO WE ARE */
