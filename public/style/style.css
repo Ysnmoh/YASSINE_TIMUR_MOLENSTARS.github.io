@@ -177,6 +177,49 @@ p {
 
 /* PARTNERS */
 .partners {
+    
+}
+
+
+h3{
+    /* background-color: red; */
+    color: #51B2E7;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    font-family: "RobotoBold";
+    src: url("../src/fonts/RobotoBold.ttf");  
+    padding-bottom: 1%;
+    
+    
+}
+h2{
+    /* background-color: purple; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2%;
+    font-size: 40px;
+
+}
+
+
+.partnersImage{
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    gap: 40px;
+}
+.partnersImagerow{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.partnersImagerow img{
+    border-radius: 10%;
+    background-color:rgb(44, 44, 136) ;
+    padding: 40px;
 
 }
 
