@@ -37,7 +37,7 @@
 body {
     background-image: url("../src/image/banner-overlay-img.png");
     background-position: top;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-color: #0A1650;
     font-family: "RobotoRegular";
@@ -118,6 +118,18 @@ h1 {
     font-family: "RobotoBold";
 }
 
+h2 {
+    color: #FFFFFF;
+    font-size: 38px;
+}
+
+h3 {
+    color: #51B2E7;
+    font-family: "RobotoRegular";
+    font-size: 15px;
+    font-weight: 100;
+}
+
 p {
     color: #95ABDD;
     font-size: 15px;
@@ -132,6 +144,7 @@ p {
     margin-left: 20.5%;
     margin-right: 8%;
     margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .bannerTxt {
@@ -177,64 +190,53 @@ p {
 
 /* PARTNERS */
 .partners {
-    
-}
-
-
-h3{
-    /* background-color: red; */
-    color: #51B2E7;
+    background-color: #0A1650;
+    height: 40vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding-top: 5%;
-    font-family: "RobotoBold";
-    src: url("../src/fonts/RobotoBold.ttf");  
-    padding-bottom: 1%;
-    
-    
-}
-h2{
-    /* background-color: purple; */
-    color: black;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 2%;
-    font-size: 40px;
-
+    align-items: center;
+    gap: 15px;
 }
 
-
-.partnersImage{
-    /* background-color: aquamarine; */
+.partnersImage {
     display: flex;
     justify-content: center;
     align-items: center;    
-    gap: 40px;
+    gap: 18px;
 }
-.partnersImagerow{
+
+.partnersImageRow {
+    padding-top: 10px;
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 18px;
 }
-.partnersImagerow img{
-    border-radius: 10%;
-    background-color:rgb(44, 44, 136) ;
-    padding: 40px;
 
+.partnersImgBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 130px;
+    background-color: #17256E;
+    border-radius: 10%;
 }
+
+.partnersImgBoxImg {
+    height: 75px;
+    
+}
+
+/* .partnersImageRow img {
+    border-radius: 10%;
+    background-color: #17256E;
+    padding: 40px;
+} */
 
 /* WHO WE ARE */
 .whoweare {
-    background-color:#51B2E7;
-    height: 900px;
-    display: flex;
-    align-items: center;
-    padding: 300px;
 
-}
-.whoweareImage img {
-    height: 450px;
-    
 }
 
 /* WHAT WE DO */
