@@ -112,9 +112,67 @@ body {
 #check {display: none;}
 
 /* MAIN */
+h1 {
+    color: #FFFFFF;
+    font-size: 54px;
+    font-family: "RobotoBold";
+}
+
+p {
+    color: #95ABDD;
+    font-size: 15px;
+    line-height: 25px;
+}
+
 /* BANNER */
 .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20.5%;
+    margin-right: 8%;
+    margin-top: 60px;
+}
 
+.bannerTxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.banner img {
+    height: 450px;
+}
+
+.bannerBtn {
+    display: flex;
+    gap: 10px;
+}
+
+.bannerBtn button {
+    background-color: #0AD3EF;
+    border: none;
+    border-radius: 50px;
+    height: 43px;
+    width: 140px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: "RobotoBold";
+    transition: all 0.3s ease;
+}
+
+.bannerBtn button:hover {
+    background-color: #3A7CEB;
+}
+
+#darkbtn {
+    background-color: #2152A1;
+}
+
+#darkbtn:hover {
+    background-color: #3A7CEB;
 }
 
 /* PARTNERS */
