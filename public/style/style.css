@@ -1,6 +1,28 @@
 /* FONTS */
+@font-face {
+    font-family: "OswaldMedium";
+    src: url("../src/fonts/OswaldMedium.ttf");
+}
 
+@font-face {
+    font-family: "OswaldRegular";
+    src: url("../src/fonts/OswaldRegular.ttf");
+}
 
+@font-face {
+    font-family: "RobotoBold";
+    src: url("../src/fonts/RobotoBold.ttf");
+}
+
+@font-face {
+    font-family: "RobotoMedium";
+    src: url("../src/fonts/RobotoMedium.ttf");
+}
+
+@font-face {
+    font-family: "RobotoRegular";
+    src: url("../src/fonts/RobotoRegular.ttf");
+}
 
 /* BODY */
 
@@ -18,19 +40,57 @@ body {
 }
 
 /* HEADER */
-
-
+header {
+    
+}
 
 /* MAIN */
+/* BANNER */
+.banner {
 
+}
 
+/* PARTNERS */
+.partners {
+
+}
+
+/* WHO WE ARE */
+.whoweare {
+
+}
+
+/* WHAT WE DO */
+.whatwedo {
+
+}
+
+/* RELIABLE IT */
+.reliableit {
+
+}
+
+/* STATISTICS */
+.statistics {
+
+}
+
+/* OUR NEWS */
+.ournews {
+
+}
+
+/* GET IN TOUCH */
+.getintouch {
+
+}
 
 /* FOOTER */
+footer {
 
-
+}
 
 /* RESPONSIVE */
-
 /* SMARTPHONE */
 @media (max-width: 576px) {
 
