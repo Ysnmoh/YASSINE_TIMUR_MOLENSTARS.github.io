@@ -195,7 +195,7 @@ h3{
 }
 h2{
     /* background-color: purple; */
-    color: white;
+    color: black;
     display: flex;
     justify-content: center;
     padding-bottom: 2%;
@@ -225,7 +225,16 @@ h2{
 
 /* WHO WE ARE */
 .whoweare {
+    background-color:#51B2E7;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    padding: 300px;
 
+}
+.whoweareImage img {
+    height: 450px;
+    
 }
 
 /* WHAT WE DO */
