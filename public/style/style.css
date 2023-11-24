@@ -274,16 +274,21 @@ p {
 .whoweareText {
     display: flex;
     flex-direction: column; 
-     
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
 }
 
 .h1WHO {
     font-size: 35px;
 }
 
+
+
 .whowearelist li {
     list-style: circle;
     color: #95ABDD;
+    margin-left: 20px;
 }
 
 /* WHAT WE DO */
