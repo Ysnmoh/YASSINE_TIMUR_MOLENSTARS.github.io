@@ -381,7 +381,43 @@ p {
 
 /* STATISTICS */
 .statistics {
+    background-image: url("../src/image/overly-img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    background-color: #122061;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+.statisticsImage{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 10px;
 
+}
+.statisticsImageRow{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.statisticsImgBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 10%;
+    background-color:#17256E;
+    flex-direction: column;
+    
+}
+.statistics h4 {
+    font-family: "OswaldMedium";
 }
 
 /* OUR NEWS */
