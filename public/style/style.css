@@ -44,72 +44,7 @@ body {
 }
 
 /* HEADER */
-.nav-bar {
-    width: 100%;
-    height: 212px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style: none;
-    position: relative;
-    padding: 12px 190px;
-}
-.logo img {
-    height: 138px;
-}
-.menu {
-    display: flex;
-    align-items: center;
-}
-.menu li {padding-left: 45px;}
-.menu li a {
-    display: inline-block;
-    text-decoration: none;
-    color: #FFFFFF;
-    font-size: 14px;
-    text-align: center;
-    transition: 0.15s ease-in-out;
-    position: relative;
-    transition: all 0.3s ease;
-}
 
-.menu li a:hover {
-    color: #0AD3EF;
-}
-
-.menu button {
-    background-color: #0AD3EF;
-    border: none;
-    border-radius: 50px;
-    height: 43px;
-    width: 140px;
-    cursor: pointer;
-    color: #FFFFFF;
-    font-family: "RobotoRegular";
-    transition: all 0.3s ease;
-}
-
-.menu button:hover {
-    background-color: #3A7CEB;
-}
-
-.open-menu , .close-menu {
-    position: absolute;
-    color: #FFFFFF;
-    cursor: pointer;
-    font-size: 1.5rem;
-    display: none;
-}
-.open-menu {
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-}
-.close-menu {
-    top: 20px;
-    right: 20px;
-}
-#check {display: none;}
 
 /* MAIN */
 h1 {
@@ -118,125 +53,57 @@ h1 {
     font-family: "RobotoBold";
 }
 
+h2 {
+    color: #FFFFFF;
+    font-size: 38px;
+}
+
+h3 {
+    color: #51B2E7;
+    font-family: "RobotoRegular";
+    font-size: 15px;
+    font-weight: 100;
+}
+
 p {
     color: #95ABDD;
     font-size: 15px;
     line-height: 25px;
 }
 
-/* BANNER */
-.banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 20.5%;
-    margin-right: 8%;
-    margin-top: 60px;
-}
-
-.bannerTxt {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-.banner img {
-    height: 450px;
-}
-
-.bannerBtn {
-    display: flex;
-    gap: 10px;
-}
-
-.bannerBtn button {
-    background-color: #0AD3EF;
-    border: none;
-    border-radius: 50px;
-    height: 43px;
-    width: 140px;
-    cursor: pointer;
-    color: #FFFFFF;
-    font-family: "RobotoBold";
-    transition: all 0.3s ease;
-}
-
-.bannerBtn button:hover {
-    background-color: #3A7CEB;
-}
-
-#darkbtn {
-    background-color: #2152A1;
-}
-
-#darkbtn:hover {
-    background-color: #3A7CEB;
-}
-
-/* PARTNERS */
-.partners {
-    
-}
-
-
-h3{
-    /* background-color: red; */
-    color: #51B2E7;
-    display: flex;
-    justify-content: center;
-    padding-top: 5%;
-    font-family: "RobotoBold";
-    src: url("../src/fonts/RobotoBold.ttf");  
-    padding-bottom: 1%;
-    
-    
-}
-h2{
-    /* background-color: purple; */
-    color: black;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 2%;
-    font-size: 40px;
-
-}
-
-
-.partnersImage{
-    /* background-color: aquamarine; */
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    gap: 40px;
-}
-.partnersImagerow{
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-}
-.partnersImagerow img{
-    border-radius: 10%;
-    background-color:rgb(44, 44, 136) ;
-    padding: 40px;
-
-}
-
 /* WHO WE ARE */
 .whoweare {
-    background-color:#51B2E7;
-    height: 900px;
+    background-color:#0A1650;
+    height: 80vh;
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 300px;
-
+    padding-left: 15%;
+    padding-right: 20%;
 }
 .whoweareImage img {
     height: 450px;
-    
+    margin-right: 70px;
 }
 
+.whoweareText{
+    /* font-size:xx-small; */
+    /* background-color:red; */
+    display: flex;
+    flex-direction: column; 
+     
+}
+/* .pwho{
+    font-size: 13px;
+       
+} */
+.h1WHO{
+    font-size: 35px;
+}
+.whowearelist li{
+    list-style: circle;
+    color: #95ABDD;
+}
 /* WHAT WE DO */
 .whatwedo {
 
