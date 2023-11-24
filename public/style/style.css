@@ -44,6 +44,34 @@ body {
 }
 
 /* HEADER */
+.nav-bar {
+    width: 100%;
+    height: 212px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    padding: 12px 190px;
+}
+.logo img {
+    height: 138px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu li {padding-left: 45px;}
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    transition: all 0.3s ease;
+}
 
 .menu li a:hover {
     color: #0AD3EF;
@@ -57,8 +85,8 @@ body {
     width: 140px;
     cursor: pointer;
     color: #FFFFFF;
-    font-family: "RobotoRegular";
     border: 2px solid #0AD3EF;
+    font-family: "RobotoRegular";
     transition: all 0.3s ease;
 }
 
@@ -218,18 +246,21 @@ p {
 
 /* WHO WE ARE */
 .whoweare {
-    background-color:#0A1650;
-    height: 80vh;
+    background-image: url("../src/image/dots-img.png");
+    background-repeat: no-repeat;
+    background-size: 240px;
+    background-position: right;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 40px;
     padding-left: 15%;
     padding-right: 20%;
 }
 
 .whoweareImage img {
-    height: 450px;
-    margin-right: 70px;
+    height: 420px;
 }
 
 .whoweareText {
