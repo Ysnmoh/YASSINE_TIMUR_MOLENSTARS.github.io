@@ -283,13 +283,32 @@ p {
     font-size: 35px;
 }
 
+.whoweare ul {
+    --icon-space: 1.5em;
+    list-style: none;
+    padding: 0;
+}
+  
+.whoweare li {
+    padding-left: var(--icon-space);
+    color: #95ABDD;
+    padding-bottom: 10px;
+}
+  
+.whoweare li:before {
+    content: "\f058"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    color: #0AD3EF;
+    margin-left: calc( var(--icon-space) * -1 );
+    width: var(--icon-space);
+}
 
-
-.whowearelist li {
+/* .whowearelist li {
     list-style: circle;
     color: #95ABDD;
     margin-left: 20px;
-}
+} */
 
 /* WHAT WE DO */
 .whatwedo {
