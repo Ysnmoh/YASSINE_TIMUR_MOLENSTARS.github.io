@@ -265,8 +265,7 @@ p {
 
 .whoweareText {
     display: flex;
-    flex-direction: column; 
-     
+    flex-direction: column;    
 }
 
 .h1WHO {
@@ -389,21 +388,19 @@ p {
     background-color: #122061;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 14px;
 }
 .statisticsImage{
     display: flex;
-    justify-content: center;
+    margin-left: 100px;
     align-items: center; 
     gap: 10px;
-
 }
 .statisticsImageRow{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: left;
+    gap: 10px; 
 }
 .statisticsImgBox{
     display: flex;
@@ -414,18 +411,60 @@ p {
     border-radius: 10%;
     background-color:#17256E;
     flex-direction: column;
-    
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+.statisticsImgBox:hover {
+    border: 2px solid #0AD3EF;
 }
 .statistics h4 {
     font-family: "OswaldMedium";
 }
 
-.statisticsText{
+.statisticsTEXT{
     display: flex;
     justify-content: right;
-    
-    flex-direction: column;
+    align-items: center;
+    flex-direction: row;
 
+}
+.statisticsText{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    /* background-color: red; */
+    width: 500px;
+    
+}
+.PSTAT {     
+    color: #0AD3EF; 
+    display: flex;
+}
+.hstat{
+    font-size: 35px;   
+}
+
+.statisticsBtn button {
+    background-color: #0AD3EF;
+    border: none;
+    border-radius: 50px;
+    height: 43px;
+    width: 140px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: "RobotoBold";
+    transition: all 0.3s ease;
+    border: 2px solid #0AD3EF;
+}
+.statisticsBtn button:hover {
+    background-color: transparent;
+}
+.class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 40px;
 }
 
 /* OUR NEWS */
