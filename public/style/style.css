@@ -705,19 +705,22 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    
-
+    flex-direction: column;   
 }
 
 .formInput{
     display: flex;
     gap: 100px;
     height: 30px;
-}
-.input{
-    border-radius: ;
     
+    
+}
+.formInput input{
+    background-color:transparent;
+    border-radius: 5px;
+    border-radius: 5px;
+    border-color: #0AD3EF;
+      
 }
 
 .formMessage{
