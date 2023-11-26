@@ -687,20 +687,17 @@ p {
 
 /* GET IN TOUCH */
 .getintouch {
-    
-    /* background-color: red; */
-    margin-top: 200px;  
-    /* display: flex;
+    height: 100vh;
+    display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; */
-    
-}
-.formGetintouch{
+    flex-direction: column;
     background-image: url("..//src/image/dots-img.png");
     background-position: right;
     background-repeat: no-repeat;
     background-size: 210px;
+}
+.formGetintouch{
     margin-top: 30px;
     display: flex;
     justify-content: center;
@@ -712,30 +709,41 @@ p {
     display: flex;
     gap: 40px;
     height: 30px;
-    
-    
 }
+
 .formInput input{
     background-color:transparent;
     border-radius: 5px;
-    border-radius: 5px;
-    border-color: #0AD3EF;
+    border: solid 2px #182762;
     height: 50px;
     width: 270px;
-      
+    padding-left: 15px;
+    color: #95ABDD;
 }
 
 .formMessage{
     margin-top: 50px;
-   display: flex;
-   justify-content: center;
-   align-items: center;   
+    display: flex;
+    justify-content: center;
+    align-items: center;   
 }
+
 textarea {
     background-color:transparent;
     border-radius: 5px;
-    border-color: #0AD3EF;
-    color: white;
+    border: 2px solid #182762;
+    color: #95ABDD;
+    resize: none;
+}
+
+textarea:focus {
+    border: #0AD3EF 2px solid;
+    outline: none;
+}
+
+.formInput input:focus {
+    border: #0AD3EF 2px solid;
+    outline: none;
 }
 
 .buttonGetintouch button {
@@ -755,12 +763,10 @@ textarea {
     align-items: center;
     
 }
+
 .buttonGetintouch button:hover {
     background-color: transparent;
 }
-
-
-
 
 /* FOOTER */
 footer {
