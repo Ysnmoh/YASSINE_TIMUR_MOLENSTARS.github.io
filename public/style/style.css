@@ -420,6 +420,14 @@ p {
     font-family: "OswaldMedium";
 }
 
+.statisticsText{
+    display: flex;
+    justify-content: right;
+    
+    flex-direction: column;
+
+}
+
 /* OUR NEWS */
 .ournews {
 
