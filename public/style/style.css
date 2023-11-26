@@ -509,25 +509,27 @@ p {
     background-color: #122061;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 14px;
 }
 .statisticsImage{
     display: flex;
     margin-left: 100px;
     align-items: center; 
-    gap: 10px;
+    gap: 18px;
 }
 .statisticsImageRow{
     display: flex;
     flex-direction: column;
     justify-content: left;
-    gap: 10px; 
+    gap: 18px; 
 }
 .statisticsImgBox{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    gap: 10px;
+    height: 190px;
     width: 200px;
     border-radius: 10%;
     background-color:#17256E;
@@ -535,11 +537,14 @@ p {
     transition: all 0.3s ease;
     border: 2px solid transparent;
 }
+
 .statisticsImgBox:hover {
     border: 2px solid #0AD3EF;
 }
+
 .statistics h4 {
     font-family: "OswaldMedium";
+    font-size: 30px;
 }
 
 .statisticsTEXT{
@@ -586,6 +591,10 @@ p {
     align-items: center;
     margin-top: 30px;
     gap: 40px;
+}
+
+.statistiscsImgBoxImg {
+    height: 50px;
 }
 
 /* OUR NEWS */
