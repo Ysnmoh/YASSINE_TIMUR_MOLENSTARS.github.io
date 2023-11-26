@@ -565,7 +565,31 @@ p {
 .ournewsBoxs h4 {
     font-size: 22px;
     line-height: 33px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
+
+.ournewsBoxs h4:hover {
+    color: #0AD3EF;
+}
+
+.ournewsBoxs h5 {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ournewsBoxs h5:hover {
+    color: #0AD3EF;
+}
+
+.ournewsBoxs a {
+    transition: all 0.3s ease;
+}
+
+.ournewsBoxs a:hover {
+    color: #0AD3EF;
+}
+
 
 .ournewsBoxLeft {
     background-color: #2152A1;
@@ -583,6 +607,11 @@ p {
     padding: 30px;
     padding-right: 60px;
     gap: 15px;
+    transition: all 0.5s ease;
+}
+
+.ournewsBoxLeft:hover {
+    transform: rotateZ(5deg);
 }
 
 .ournewsBoxRight {
@@ -601,6 +630,11 @@ p {
     padding: 30px;
     padding-right: 60px;
     gap: 15px;
+    transition: all 0.5s ease;
+}
+
+.ournewsBoxRight:hover {
+    transform: rotateZ(5deg);
 }
 
 /* GET IN TOUCH */
