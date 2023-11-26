@@ -698,20 +698,58 @@ p {
 .formGetintouch{
     margin-top: 30px;
     display: flex;
-    justify-content: ;
+    justify-content: center;
     align-items: center;
-    color: white;
+    flex-direction: column;
+    
+
 }
+
+.input{
+    display: flex;
+    gap: 100px;
+    height: 30px;
+    
+}
+
 .formMessage{
-    color: white;
+    margin-top: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;  
   
 }
-.message{
+
+.buttonGetintouch button {
+    background-color: #0AD3EF;
+    border: none;
+    border-radius: 50px;
+    height: 43px;
+    width: 140px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: "RobotoBold";
+    transition: all 0.3s ease;
+    border: 2px solid #0AD3EF;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
-    
+    align-items: center;
     
 }
+.buttonGetintouch button:hover {
+    background-color: transparent;
+    
+   
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
 
 /* FOOTER */
 footer {
