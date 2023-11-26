@@ -710,10 +710,13 @@ p {
 
 }
 
-.input{
+.formInput{
     display: flex;
     gap: 100px;
     height: 30px;
+}
+.input{
+    border-radius: ;
     
 }
 
@@ -721,8 +724,13 @@ p {
     margin-top: 50px;
    display: flex;
    justify-content: center;
-   align-items: center;  
-  
+   align-items: center;   
+}
+textarea {
+    background-color:transparent;
+    border-radius: 5px;
+    border-color: #0AD3EF;
+    color: white;
 }
 
 .buttonGetintouch button {
@@ -744,8 +752,6 @@ p {
 }
 .buttonGetintouch button:hover {
     background-color: transparent;
-    
-   
 }
 
 
