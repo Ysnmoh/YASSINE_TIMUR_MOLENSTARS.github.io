@@ -687,6 +687,7 @@ p {
 
 /* GET IN TOUCH */
 .getintouch {
+    
     /* background-color: red; */
     margin-top: 200px;  
     /* display: flex;
@@ -696,6 +697,10 @@ p {
     
 }
 .formGetintouch{
+    background-image: url("..//src/image/dots-img.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 210px;
     margin-top: 30px;
     display: flex;
     justify-content: center;
@@ -742,12 +747,7 @@ p {
     
    
 }
-.submit{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-}
+
 
 
 
