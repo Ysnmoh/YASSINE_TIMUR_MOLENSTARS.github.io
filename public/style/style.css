@@ -38,16 +38,34 @@ body {
     font-family: "RobotoRegular";
 }
 
+h1 {
+    color: #FFFFFF;
+    font-family: "RobotoBold";
+    font-size: 66px;
+    line-height: 84px;
+}
+
+p {
+    color: #91B4F1;
+    font-family: "RobotoRegular";
+    font-size: 18px;
+    line-height: 34px;
+}
+
 /* ########### HEADER ########### */
 header {
     height: 100vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
     background-image: url("../assets/image/banner-overlay-img.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+/* ### NAVBAR ### */
 .nav-bar {
     width: 100%;
     height: 230px;
@@ -123,6 +141,67 @@ header {
 }
 
 #check {display: none;}
+
+/* BANNER */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 225px;
+}
+
+.bannerText {
+    height: 573px;
+    width: 590px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    padding-top: 10px;
+}
+
+.bannerTextButton {
+    display: flex;
+    justify-content: left;
+    gap: 18px;
+    padding-top: 25px;
+}
+
+.bannerTextButton button {
+    background-color: #0AD3EF;
+    border: none;
+    border-radius: 50px;
+    height: 55px;
+    width: 175px;
+    cursor: pointer;
+    border: 2px solid #0AD3EF;
+    transition: all 0.3s ease;
+}
+
+
+.bannerTextButton button:hover {
+    background-color: transparent;
+}
+
+.bannerTextButton #darkButton {
+    background-color: #2052A1;
+    border: 2px solid #2052A1;
+}
+
+.bannerTextButton #darkButton:hover {
+    background-color: transparent;
+}
+
+.bannerTextButton button a {
+    font-family: "RobotoRegular";
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.bannerImage {
+    height: max-content;
+    width: max-content;
+}
 
 /* ############ MAIN ############ */
 
