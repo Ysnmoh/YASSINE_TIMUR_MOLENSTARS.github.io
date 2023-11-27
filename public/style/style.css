@@ -1,5 +1,28 @@
 /* ########### FONTS ############ */
+@font-face {
+    font-family: "OswaldMedium";
+    src: url("../assets/fonts/OswaldMedium.ttf");
+}
 
+@font-face {
+    font-family: "OswaldRegular";
+    src: url("../assets/fonts/OswaldRegular.ttf");
+}
+
+@font-face {
+    font-family: "RobotoBold";
+    src: url("../assets/fonts/RobotoBold.ttf");
+}
+
+@font-face {
+    font-family: "RobotoMedium";
+    src: url("../assets/fonts/RobotoMedium.ttf");
+}
+
+@font-face {
+    font-family: "RobotoRegular";
+    src: url("../assets/fonts/RobotoRegular.ttf");
+}
 
 /* ############ BODY ############  */
 * {
