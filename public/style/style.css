@@ -41,26 +41,25 @@ body {
 h1 {
     color: #FFFFFF;
     font-family: "RobotoBold";
-    font-size: 66px;
-    line-height: 84px;
+    font-size: 51px;
+    line-height: 64px;
 }
 
 p {
     color: #91B4F1;
     font-family: "RobotoRegular";
-    font-size: 18px;
-    line-height: 34px;
+    font-size: 14px;
+    line-height: 24px;
 }
 
 /* ########### HEADER ########### */
 header {
-    height: 100vh;
+    height: 87vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 90px;
     background-image: url("../assets/image/banner-overlay-img.png");
-    background-position: center;
+    background-position: 0 -45px;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -68,7 +67,7 @@ header {
 /* ### NAVBAR ### */
 .nav-bar {
     width: 100%;
-    height: 230px;
+    height: 205px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,21 +77,21 @@ header {
 }
 
 .logo img {
-    height: 175px;
+    height: 140px;
 }
 
 .menu {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 55px;
+    gap: 42px;
 }
 
 .menu li a {
     display: inline-block;
     text-decoration: none;
     color: #FFFFFF;
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
     transition: 0.15s ease-in-out;
     position: relative;
@@ -107,13 +106,13 @@ header {
     background-color: #0AD3EF;
     border: none;
     border-radius: 50px;
-    height: 55px;
-    width: 175px;
+    height: 44px;
+    width: 136px;
     cursor: pointer;
     color: #FFFFFF;
     border: 2px solid #0AD3EF;
     font-family: "RobotoRegular";
-    font-size: 18px;
+    font-size: 14px;
     transition: all 0.3s ease;
 }
 
@@ -142,37 +141,103 @@ header {
 
 #check {display: none;}
 
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+@media (max-width: 576px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+        width: 45%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #0A1650;
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li {
+        margin-top: 40px;
+        padding: 0;
+    }
+    .menu li a {
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .open-menu, .close-menu {
+        display: block;
+    }
+    #check:checked ~ .menu {
+        right: 0;
+    }
+}
+
+/* ### TABLET ### */
+@media (min-width: 577px) and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+        width: 45%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #0A1650;
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li {
+        margin-top: 40px;
+        padding: 0;
+    }
+    .menu li a {
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .open-menu, .close-menu {
+        display: block;
+    }
+    #check:checked ~ .menu {
+        right: 0;
+    }
+}
+
 /* BANNER */
 .banner {
+    width: max-content;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 225px;
+    gap: 14px;
+    margin-left: 295px;
+    margin-top: 61px;
 }
 
 .bannerText {
-    height: 573px;
-    width: 590px;
+    width: 440px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 12px;
-    padding-top: 10px;
 }
 
 .bannerTextButton {
     display: flex;
     justify-content: left;
-    gap: 18px;
-    padding-top: 25px;
+    gap: 12px;
+    padding-top: 18px;
 }
 
 .bannerTextButton button {
     background-color: #0AD3EF;
     border: none;
     border-radius: 50px;
-    height: 55px;
-    width: 175px;
+    height: 44px;
+    width: 136px;
     cursor: pointer;
     border: 2px solid #0AD3EF;
     transition: all 0.3s ease;
@@ -194,13 +259,63 @@ header {
 
 .bannerTextButton button a {
     font-family: "RobotoRegular";
-    font-size: 18px;
+    font-size: 14px;
     color: #FFFFFF;
 }
 
-.bannerImage {
-    height: max-content;
-    width: max-content;
+.bannerImage img {
+    height: 445px;
+}
+
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+@media (max-width: 576px) {
+    header {
+        height: 120vh;
+    }
+    .banner {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        margin-left: 20px;
+    }
+    .bannerText {
+        width: 350px;
+    }
+    .bannerImage img {
+        width: 350px;
+        height: auto;
+    }
+}
+
+/* ### TABLET ### */
+@media (min-width: 577px) and (max-width: 768px) {
+    header {
+        height: 110vh;
+    }
+    .banner {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .bannerImage img {
+        width: 440px;
+        height: auto;
+    }
+}
+
+/* ### DESKTOP ### */
+@media (min-width: 769px) and (max-width: 1024px) {
+    header {
+        height: 120vh;
+    }
+    .banner {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+}
+
+/* ### BIG DESKTOP ### */
+@media (min-width: 1025px) {
+
 }
 
 /* ############ MAIN ############ */
