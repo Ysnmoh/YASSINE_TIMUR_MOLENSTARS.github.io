@@ -270,13 +270,10 @@ header {
 /* ######### RESPONSIVE ######### */
 /* ### SMARTPHONE ### */
 @media (max-width: 576px) {
-    header {
-        height: 120vh;
-    }
     .banner {
         flex-direction: column-reverse;
-        align-items: flex-start;
-        margin-left: 20px;
+        margin-left: 0;
+        width: 100%;
     }
     .bannerText {
         width: 350px;
@@ -289,9 +286,6 @@ header {
 
 /* ### TABLET ### */
 @media (min-width: 577px) and (max-width: 768px) {
-    header {
-        height: 110vh;
-    }
     .banner {
         flex-direction: column-reverse;
         align-items: flex-start;
@@ -304,9 +298,6 @@ header {
 
 /* ### DESKTOP ### */
 @media (min-width: 769px) and (max-width: 1024px) {
-    header {
-        height: 120vh;
-    }
     .banner {
         flex-direction: column-reverse;
         align-items: flex-start;
