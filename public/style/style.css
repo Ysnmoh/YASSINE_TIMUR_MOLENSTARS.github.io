@@ -61,6 +61,13 @@ h3 {
     text-align: center;
 }
 
+h4 {
+    color: #FFFFFF;
+    font-family: "RobotoMedium";
+    font-size: 15px;
+    line-height: 20px;
+}
+
 p {
     color: #91B4F1;
     font-family: "RobotoRegular";
@@ -151,8 +158,8 @@ header {
 }
 
 .close-menu {
-    top: 20px;
-    right: 20px;
+    top: 90px;
+    right: 25px;
 }
 
 #check {display: none;}
@@ -494,9 +501,126 @@ header {
     }
 }
 
-/* ### BIG DESKTOP ### */
-@media (min-width: 1024px) {
+/* ### WHAT WE DO ### */
+.whatwedo {
+    background-image: url("../assets/image/overly-img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #132061;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
 
+.whatwedo h2 {
+    width: 650px;
+    line-height: 44px;
+}
+
+.whatwedo h3 {
+    padding-top: 91px;
+}
+
+.whatwedo p {
+    line-height: 20px;
+}
+
+
+.whatwedoCol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    padding-top: 16px;
+}
+
+.whatwedoRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
+
+.whatwedoBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: flex-start;
+    height: 260px;
+    width: 198px;
+    background-color: #17256E;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    padding: 25px;
+    padding-top: 0;
+    border: 2px solid transparent;
+}
+
+.whatwedoBox img {
+    height: 45px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.whatwedoBox h4 {
+    width: 90px;
+}
+
+.whatwedoBox:hover {
+    border: 2px solid #0AD3EF;
+}
+
+.whatwedoBox:hover img {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.whatwedoBtn {
+    padding-top: 28px;
+    padding-bottom: 93px;
+}
+
+.whatwedoBtn button {
+    background-color: #0AD3EF;
+    border: none;
+    border-radius: 50px;
+    height: 43px;
+    width: 140px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: "RobotoBold";
+    transition: all 0.3s ease;
+    border: 2px solid #0AD3EF;
+}
+
+.whatwedoBtn button:hover {
+    background-color: transparent;
+}
+
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+@media (max-width: 576px) {
+    .whatwedoCol {
+        flex-direction: column;
+    }
+    .whatwedoRow {
+        flex-direction: column;
+    }
+    .whatwedo h2 {
+        width: 340px;
+    }
+}
+
+/* ### TABLET ### */
+@media (min-width: 577px) and (max-width: 768px) {
+    .whatwedoCol {
+        flex-direction: column;
+    }
 }
 
 /* ########### FOOTER ########### */
