@@ -45,6 +45,21 @@ h1 {
     line-height: 64px;
 }
 
+h2 {
+    color: #FFFFFF;
+    font-family: "RobotoBold";
+    font-size: 37px;
+    text-align: center;
+}
+
+h3 {
+    color: #51B2E7;
+    font-family: "RobotoRegular";
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+}
+
 p {
     color: #91B4F1;
     font-family: "RobotoRegular";
@@ -305,12 +320,84 @@ header {
 }
 
 /* ### BIG DESKTOP ### */
-@media (min-width: 1025px) {
-
+@media (min-width: 1441px) {
+    header {
+        height: 100vh;
+        gap: 16%;
+    }
+    .banner {
+        margin-left: 0;
+        width: 100%;
+    }
 }
 
 /* ############ MAIN ############ */
+/* ### PARTNERS ### */
+.partners {
+    width: 100%;
+}
 
+.partnersContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 85px;
+    gap: 14px;
+}
+
+.partnersImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    gap: 25px;
+    padding-top: 15px;
+}
+
+.partnersImageRow {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.partnersImgBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+    width: 122px;
+    background-color: #17256E;
+    border-radius: 10%;
+    transition: all 0.3s ease;
+}
+
+.partnersImgBox:hover {
+    background-color: #0AD3EF;
+    padding-bottom: 10px;
+}
+
+.partnersImgBox:hover img {
+    filter: brightness(100);
+}
+
+.partnersImgBoxImg {
+    height: 70px;
+}
+
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+@media (max-width: 576px) {
+    .partnersImageRow {
+        flex-direction: column;
+    }
+}
+
+/* ### TABLET ### */
+@media (min-width: 577px) and (max-width: 768px) {
+    .partnersImage {
+        flex-direction: column;
+    }
+}
 
 /* ########### FOOTER ########### */
 
