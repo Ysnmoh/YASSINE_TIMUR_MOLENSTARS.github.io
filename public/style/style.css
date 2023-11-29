@@ -49,6 +49,7 @@ h2 {
     color: #FFFFFF;
     font-family: "RobotoBold";
     font-size: 37px;
+    line-height: 50px;
     text-align: center;
 }
 
@@ -64,7 +65,7 @@ p {
     color: #91B4F1;
     font-family: "RobotoRegular";
     font-size: 14px;
-    line-height: 24px;
+    line-height: 25px;
 }
 
 /* ########### HEADER ########### */
@@ -291,10 +292,10 @@ header {
         width: 100%;
     }
     .bannerText {
-        width: 350px;
+        width: 320px;
     }
     .bannerImage img {
-        width: 350px;
+        width: 320px;
         height: auto;
     }
 }
@@ -397,6 +398,105 @@ header {
     .partnersImage {
         flex-direction: column;
     }
+}
+
+/* ### WHO WE ARE ### */
+.whoweare {
+    background-image: url("../assets/image/dots-img.png");
+    background-repeat: no-repeat;
+    background-size: 215px;
+    background-position-x: 101%;
+    background-position-y: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 54px;
+    padding-top: 130px;
+    padding-bottom: 95px;
+    padding-right: 5%;
+}
+
+.whoweareImage {
+    height: fit-content;
+}
+
+.whoweareImage img {
+    height: 410px;
+}
+
+.whoweareText {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    width: 420px;
+}
+
+.titleLeft {
+    text-align: left;
+}
+
+.whoweare ul {
+    --icon-space: 1.5em;
+    list-style: none;
+    padding: 0;
+}
+  
+.whoweare li {
+    padding-left: var(--icon-space);
+    color: #91B4F1;
+    font-family: "RobotoRegular";
+    font-size: 14px;
+    line-height: 25px;
+}
+  
+.whoweare li:before {
+    content: "\f058";
+    font-family: FontAwesome;
+    display: inline-block;
+    color: #0AD3EF;
+    margin-left: calc( var(--icon-space) * -1 );
+    width: var(--icon-space);
+}
+
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+@media (max-width: 576px) {
+    .whoweare {
+        padding-right: 0;
+        flex-direction: column;
+    }
+    .whoweareImage {
+        height: fit-content;
+    }
+    
+    .whoweareImage img {
+        height: 280px;
+    }
+    .whoweareText {
+        width: 320px;
+    }
+}
+
+/* ### TABLET ### */
+@media (min-width: 577px) and (max-width: 768px) {
+    .whoweare {
+        padding-right: 0;
+        flex-direction: column;
+    }
+}
+
+/* ### DESKTOP ### */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .whoweare {
+        padding-right: 0;
+    }
+}
+
+/* ### BIG DESKTOP ### */
+@media (min-width: 1024px) {
+
 }
 
 /* ########### FOOTER ########### */
