@@ -696,7 +696,7 @@ header {
     display: flex;
     align-items: flex-end;
     justify-content: right;
-    width: 714px;
+    width: 50vw;
     height: 626px;
 }
 
@@ -769,13 +769,6 @@ header {
     }
     .reliableit {
         background-position-y: 15%;
-    }
-}
-
-/* ### DESKTOP ### */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .reliableitRight {
-        width: 512px;
     }
 }
 
