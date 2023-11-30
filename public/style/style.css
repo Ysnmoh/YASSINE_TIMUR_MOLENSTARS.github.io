@@ -554,9 +554,9 @@ header {
     width: 198px;
     background-color: #17256E;
     border-radius: 10px;
-    transition: all 0.3s ease;
     padding: 25px;
     padding-top: 0;
+    transition: all 0.3s ease;
     border: 2px solid transparent;
 }
 
@@ -772,6 +772,126 @@ header {
     }
 }
 
+/* ### STATISTICS ### */
+.statistics {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/image/overly-img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #132061;
+}
+
+.statisticsContent {
+    padding-top: 92px;
+    padding-bottom: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.statisticsCardsCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.statisticsCardsRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.statisticsCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    width: 200px;
+    background-color: #17256E;
+    gap: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.statisticsCard:hover {
+    border: 2px solid #0AD3EF;
+}
+
+.statisticsCard img {
+    height: 48px;
+}
+
+.statisticsCard h4 {
+    font-size: 28px;
+    font-family: "OswaldMedium";
+    padding-top: 10px;
+}
+
+.statisticsCard h4 sup {
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.statisticsText {
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 11px;
+}
+
+.statisticsBtn {
+    padding-top: 20px;
+}
+
+.statisticsBtn button {
+    background-color: #0AD3EF;
+    border: none;
+    border-radius: 50px;
+    height: 43px;
+    width: 140px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: "RobotoBold";
+    transition: all 0.3s ease;
+    border: 2px solid #0AD3EF;
+}
+
+.statisticsBtn button:hover {
+    background-color: transparent;
+}
+
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+@media (max-width: 576px) {
+    .statisticsContent {
+        flex-direction: column-reverse;
+    }
+    .statisticsCardsRow {
+        flex-direction: column;
+    }
+    .statisticsText {
+        width: 320px;
+    }
+}
+
+/* ### TABLET ### */
+@media (min-width: 577px) and (max-width: 768px) {
+    .statisticsContent {
+        flex-direction: column-reverse;
+    }
+}
+
 /* ########### FOOTER ########### */
 
 
@@ -787,11 +907,11 @@ header {
 }
 
 /* ### DESKTOP ### */
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 1024px) {
 
 }
 
 /* ### BIG DESKTOP ### */
-@media (min-width: 993px) {
+@media (min-width: 1025px) {
 
 }
