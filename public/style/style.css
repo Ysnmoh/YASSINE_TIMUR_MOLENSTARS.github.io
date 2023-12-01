@@ -1196,25 +1196,185 @@ textarea:focus {
 }
 
 /* ########### FOOTER ########### */
+footer {
+    background-color: #122061;
+    background-image: url("../assets/image/overly-img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+}
 
+footer p {
+    color: #95ABDD;
+    font-size: 13px;
+}
+
+.footerUp {
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+    padding: 80px 0;
+}
+
+.footerUpLogo {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footerUpLogo img {
+    height: 140px;
+}
+
+.footerUpAbout {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footerUpAbout ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footerUpServices {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footerUpServices ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footerUpServices .links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    font-size: 12px;
+}
+
+.footerUpServices .links a {
+    color: #FFFFFF
+}
+
+.footerUpNews {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer #email {
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    height: 42px;
+    width: 210px;
+    color: #95ABDD;
+    padding-left: 10px;
+}
+
+footer #email:focus {
+    outline: none;
+}
+
+footer input[type=checkbox] {
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	-o-appearance:none;
+	outline: none;
+	content: none;
+}
+
+footer input[type=checkbox]:before {
+	font-family: "FontAwesome";
+    content: "\f00c";
+    font-size: 15px;
+    color: transparent !important;
+    background: transparent;
+    display: block;
+    border: 1px solid #0AD3EF;
+    border-radius: 5px;
+}
+
+footer input[type=checkbox]:checked:before {
+
+	color: #0AD3EF !important;
+}
+
+.myInput {
+    display: flex;
+    background-color: transparent;
+    border: solid 2px #182762;
+    border-radius: 5px;
+    height: 42px;
+    width: 210px;
+    padding-right: 10px;
+}
+
+.footerUpNews button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footerDown {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #243271;
+}
+
+.footerDown p {
+    font-size: 11px;
+}
 
 /* ######### RESPONSIVE ######### */
 /* ### SMARTPHONE ### */
 @media (max-width: 576px) {
-
+    footer {
+        height: 160vh;
+    }
+    .footerUp {
+        gap: 65px;
+        flex-wrap: wrap;
+        padding: 80px 20%;
+        justify-content: flex-start;
+    }
 }
+
 
 /* ### TABLET ### */
 @media (min-width: 577px) and (max-width: 768px) {
-
+    footer {
+        height: 100vh;
+    }
+    .footerUp {
+        gap: 65px;
+        flex-wrap: wrap;
+        padding: 80px 0;
+    }
 }
 
 /* ### DESKTOP ### */
 @media (min-width: 769px) and (max-width: 1024px) {
-
-}
-
-/* ### BIG DESKTOP ### */
-@media (min-width: 1025px) {
-
+    .footerUp {
+        gap: 65px;
+    }
 }
