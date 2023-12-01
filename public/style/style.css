@@ -901,6 +901,7 @@ header {
 
 /* ### OUR NEWS ### */
 .ournews {
+    width: 100%;
     display: flex;
     justify-content: center;
     background-image: url("../assets/image/dots-img2.png");
@@ -1050,6 +1051,148 @@ header {
 /* ### DESKTOP ### */
 @media (min-width: 769px) and (max-width: 1024px) {
 
+}
+
+/* ### GET IN TOUCH ### */
+.getintouch {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/image/dots-img.png");
+    background-repeat: no-repeat;
+    background-size: 215px;
+    background-position-x: 101%;
+    background-position-y: 60%;
+}
+
+.getintouchContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 155px;
+    padding-bottom: 98px;
+}
+
+.getintouchForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.getintouchFormTop {
+    width: 860px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.getintouchFormTop input {
+    background-color: #0A1650;
+    border-radius: 5px;
+    border: solid 2px #182762;
+    height: 50px;
+    width: 270px;
+    padding-left: 15px;
+    color: #95ABDD;
+    font-family: "RobotoRegular";
+}
+
+.getintouchFormTop input::placeholder {
+    color: #95ABDD;
+    font-family: "RobotoRegular";
+}
+
+.getintouchFormTop input:focus {
+    border: #0AD3EF 2px solid;
+    outline: none;
+}
+
+.getintouchFormBot {
+    display: flex;
+}
+
+.getintouchFormBot textarea {
+    background-color: #0A1650;
+    border-radius: 5px;
+    border: 2px solid #182762;
+    color: #95ABDD;
+    font-family: "RobotoRegular";
+    resize: none;
+    display: block;
+    width: 860px;
+    height: 110px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.getintouchFormBot textarea::placeholder {
+    color: #95ABDD;
+    font-family: "RobotoRegular";
+}
+
+textarea:focus {
+    border: #0AD3EF 2px solid;
+    outline: none;
+}
+
+.buttonGetintouch {
+    padding-top: 25px;
+}
+
+.buttonGetintouch button {
+    background-color: #0AD3EF;
+    border: none;
+    border-radius: 50px;
+    height: 43px;
+    width: 140px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: "RobotoBold";
+    transition: all 0.3s ease;
+    border: 2px solid #0AD3EF;
+}
+
+.buttonGetintouch button:hover {
+    background-color: transparent;
+}
+
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+@media (max-width: 576px) {
+    .getintouchFormTop {
+        flex-direction: column;
+        width: 320px;
+        gap: 20px;
+    }
+    .getintouchFormTop input {
+        width: 320px;
+    }
+    .getintouchFormBot textarea {
+        width: 320px;
+        height: 110px;
+    }
+}
+
+/* ### TABLET ### */
+@media (min-width: 577px) and (max-width: 768px) {
+    .getintouchFormTop {
+        flex-direction: column;
+        width: 700px;
+        gap: 20px;
+    }
+    .getintouchFormTop input {
+        width: 700px;
+    }
+    .getintouchFormBot textarea {
+        width: 700px;
+        height: 110px;
+    }
 }
 
 /* ########### FOOTER ########### */
